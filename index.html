@@ -48,7 +48,7 @@
     </header>
     <main class="main">
       <section class="hero">
-        <div class="zero"></div>
+        <div></div>
         <div class="hero-image">
           <h1 class="hero-title">онлайн тренировки<br>любой сложности</h1>
           <p class="hero-description">&gt; 15 тренировок</p>
@@ -57,39 +57,56 @@
             <button class="btn hero-btn">узнать подробнее</button>
           </div>
           <img class="hero-slide" src="image/icons/Arrow.svg" alt="slide">
-          <img class="girl" src="image/files/@1x/screen.png" alt="girl">
+          <div class="hero-image-girls">
+            <div class="hero-image-girl">
+             <img class="girl" src="image/files/@1x/screen.png" alt="girl">
+            </div>
+          </div>
+          
         </div>
-        <div class="zero"></div>
+        <div></div>
       </section>
       <section class="events">
-        <div class="zero"></div>
+        <div></div>
         <div class="events-container">
           <div class="events-title">
             <h2 class="events-title-h2">Ближайшие события</h2>
           </div>
           <div class="events-photo maraphon">
-            <img src="image/files/@1x/maraphon.png" alt="maraphon">
+            <div class="events-item">
+              <div class="events-thumb">
+                <img class="events-image" src="image/files/@1x/maraphon.png" alt="maraphon">
+              </div>
+            </div>
             <p class="maraphon-date">29.06 - 4.07</p>
             <p class="maraphon-description">Марафон выносливости</p>
             <button class="event-maraphon">марафон</button>
             <div class="events-add"></div>
           </div>
           <div class="events-photo vebinar">
-            <img src="image/files/@1x/Vebinar 1.png" alt="vebinar">
+            <div class="events-item">
+              <div class="events-thumb">
+                <img class="events-image" src="image/files/@1x/Vebinar 1.png" alt="maraphon">
+              </div>
+            </div>
             <p class="vebinar-date">9.07</p>
             <p class="vebinar-description">Как стать<br>тренером?</p>
             <button class="event-maraphon">вебинар</button>
             <div class="events-add"></div>
           </div>
           <div class="events-photo vebinars">
-            <img src="image/files/@1x/Vebinar 2.png" alt="vebinars">
+            <div class="events-item">
+              <div class="events-thumb">
+                <img class="events-image" src="image/files/@2x/Vebinar 2@2x.png" alt="maraphon">
+              </div>
+            </div>
             <p class="vebinars-date">15.07</p>
             <p class="vebinars-description">Йога, как стиль жизни</p>
             <button class="event-maraphon">вебинар</button>
             <div class="events-add"></div>
           </div>
         </div>
-        <div class="zero"></div>
+        <div></div>
       </section>
       <section class="timetable">
         <div></div>
@@ -152,7 +169,7 @@
   </div>
   <div class="form">
       <div class="form-item">
-        <h2 class="form-title">Подпишитесь на рассылку</h2>
+        <h2 class="form-title">Подпишитесь на&nbsp;рассылку</h2>
         <svg class="forma-circle" width="101" height="101" viewbox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d)">
           <circle cx="50.5" cy="37.5" r="26.5" fill="#FBF138"/>
@@ -169,14 +186,13 @@
           </filter>
           </defs>
         </svg>
-        
-        <form>
+        <form class="form-input">
           <input class="form-email" type="email" placeholder="Ваш e-mail">
-          <input class="form-sbt" type="submit" value="ПОДПИСАТЬСЯ">
           <label class="check-container"><p>Согласен с обработкой <span class="pers-data">персональных данных</span></p> 
             <input type="checkbox">
             <span class="checkmark"></span>
           </label>
+          <input class="form-sbt" type="submit" value="ПОДПИСАТЬСЯ">
         </form>
       </div>
   </div>
@@ -187,6 +203,8 @@
         <div class="about-title">
           <h2 class="about-title-h2">О компании</h2>
           <p class="about-title-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp; только онлайн-тренировки.</p>
+        </div>
+        <div class="about-button">
           <button class="btn about-btn">Записаться</button>
         </div>
         <div class="about-photo">
@@ -258,7 +276,7 @@
                     </svg>
                   </a></li>
                   <li class="social-item"><a href="" class="social-link">
-                    <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.8">
                       <path d="M4.39453 30H14.1797V19.3359H10.6641V15.8203H14.1797V11.4258C14.1797 9.00261 16.151 7.03125 18.5742 7.03125H22.9688V10.5469H19.4531C18.4838 10.5469 17.6953 11.3354 17.6953 12.3047V15.8203H22.8101L22.2242 19.3359H17.6953V30H25.6055C28.0286 30 30 28.0286 30 25.6055V4.39453C30 1.97136 28.0286 0 25.6055 0H4.39453C1.97136 0 0 1.97136 0 4.39453V25.6055C0 28.0286 1.97136 30 4.39453 30ZM1.75781 4.39453C1.75781 2.94067 2.94067 1.75781 4.39453 1.75781H25.6055C27.0593 1.75781 28.2422 2.94067 28.2422 4.39453V25.6055C28.2422 27.0593 27.0593 28.2422 25.6055 28.2422H19.4531V21.0938H23.7133L24.8852 14.0625H19.4531V12.3047H24.7266V5.27344H18.5742C15.1817 5.27344 12.4219 8.03329 12.4219 11.4258V14.0625H8.90625V21.0938H12.4219V28.2422H4.39453C2.94067 28.2422 1.75781 27.0593 1.75781 25.6055V4.39453Z" fill="#2B3541"/>
                       </g>
@@ -267,11 +285,11 @@
                 </ul>
               </div>
             </div>
-            </div>
-          <div class="footer-bottom">
-            <p>&copy; 2020, Все права защищены</p>
-            <p>Сделано в рамках курса учебной платформы <a class="footer-link" target="_blank" href="https://cabinet.frontendblok.com">Frontend Blok</a></p>
-          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">&copy; 2020, Все права защищены</p>
+          <p>Сделано в рамках курса учебной платформы <a class="footer-link" target="_blank" href="https://cabinet.frontendblok.com">Frontend Blok</a></p>
+        </div>
       </div>
       <div></div>
     </footer>
