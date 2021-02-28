@@ -123,10 +123,6 @@ h2 {
   margin-bottom: 100px;
 }
 
-.burger {
-  display: none;
-}
-
 .hero-image {
   position: relative;
   display: flex;
@@ -815,7 +811,14 @@ form input {
     margin-right: 60px;
   }
 }
-
+@media (min-width: 561px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: none;
+  }
+}
 @media (max-width: 560px) {
   .container {
     padding-left: 10px;
@@ -835,15 +838,79 @@ form input {
   .social {
     margin-top: 30px;
   }
-  .burger {
+  #burger {
     display: flex;
     width: 29px;
     height: 22px;
     margin-top: 33px;
     cursor: pointer;
   }
+
+  .menu {
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    right: 360px;
+    width: 360px;
+    height: 466px;
+    transition: transform .3s ease-in-out;
+    transform: translateY(-520px);
+  }
+   .menu.is-active { 
+    transform: none;
+  }
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-logo {
+    margin-top: 29px;
+    margin-left: 10px;
+  }
+  .close {
+   margin-top: 30px; 
+   margin-right: 10px;
+   cursor: pointer;
+  }
+  .menu-nav-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding-left: 9px;
+  }
+  .menu-nav-list .nav-item {
+    margin-right: 9px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 20px;
+    opacity: 0.2;
+    border-bottom: 1px solid #2B3541;
+  }
+  .menu-social {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu-social-list {
+    display: flex;
+    margin-right: 31px;
+    margin-bottom: 20px;
+  }
+  .menu-main {
+    background-color: rgba(243, 243, 243, 1);
+  }
+  .menu-button {
+    height: 135px;
+    background-color:#2B3541;
+    opacity: .4;
+  }
+  .menu-button .btn {
+    margin-top: 35px;
+    margin-left: 9px;
+  }
+
   .hero {
-    
     margin: 0; 
   }
   .hero-image {
