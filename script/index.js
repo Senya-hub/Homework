@@ -17,3 +17,15 @@ $( document ).ready(function(){
         $('.events-share').hide(100);
     });
 });
+
+$('#timetable-text8').hide();
+if(window.matchMedia('(min-width: 768px)').matches){
+     $('.timetable-item8').mouseenter(function(){
+        $('#timetable-text8').show(700);
+    });
+    $('.timetable-item8').mouseleave(function(){
+        $('#timetable-text8').hide(500);
+    });
+
+}
+        
