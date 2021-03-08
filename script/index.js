@@ -28,4 +28,21 @@ if(window.matchMedia('(min-width: 768px)').matches){
     });
 
 }
+
+$(function(){
+    $('.events-share').on('click', function(){
+        $('.menu-marathon').css('display', 'flex');
+    });
+
+    $('.menu-marathon').on('click', function(event){
+        if(event.target === this) {
+             $('.menu-marathon').css('display', 'none');
+        }
+    });
+
+    $('.cross').on('click', function(){
+       $('.menu-marathon').css('display', 'none');
+    });
+});
+
         
