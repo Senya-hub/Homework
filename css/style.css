@@ -16,7 +16,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #E5E5E5;
+  /* background: #E5E5E5; */
   color: #2B3541;
 }
 
@@ -38,6 +38,9 @@ h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 125%;
+}
+.wrapper {
+  /* background: #E5E5E5; */
 }
 ::placeholder {
   font-weight: 400;
