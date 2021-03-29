@@ -50,7 +50,9 @@ h2 {
   color: #0000009e;
 }
 
-.menu-marathon {
+.menu-marathon,
+.menu-vebinar,
+.menu-vebinars {
   position: fixed; 
   height: 100%;
   width: 100%; 
@@ -383,7 +385,9 @@ transition: 0.5s ease;
   font-size: 28px;
   line-height: 125%;
 }
-.events-share {
+.events-share,
+.events-share1,
+.events-share2 {
   position: absolute;
   width: 221px;
   height: 64px;
