@@ -40,17 +40,6 @@ $( document ).ready(function(){
   });
 });
 
-$('#timetable-text8').hide();
-if(window.matchMedia('(min-width: 768px)').matches){
-     $('.timetable-item8').mouseenter(function(){
-        $('#timetable-text8').show(700);
-    });
-    $('.timetable-item8').mouseleave(function(){
-        $('#timetable-text8').hide(500);
-    });
-
-}
-
 $(function(){
     $('.events-share').on('click', function(){
         $('.menu-marathon').css('display', 'flex');
@@ -123,4 +112,92 @@ new JustValidate('.form', {
       },
     },
   });
+  
+   $( document ).ready(function(){
+	$('#timetable-text8').hide();  
+	  $('.timetable-item8').mouseenter(function(){
+		$('#timetable-text8').show(500);
+	  });
+	  $('.timetable-item8').mouseleave(function(){
+		$('#timetable-text8').hide(100);
+	  });
+  });
+  
+  $( document ).ready(function(){
+	$('#timetable-text7').hide();  
+	  $('.timetable-item7').mouseenter(function(){
+		$('#timetable-text7').show(500);
+	  });
+	  $('.timetable-item7').mouseleave(function(){
+		$('#timetable-text7').hide(100);
+	  });
+  });
+  $( document ).ready(function(){
+	$('#timetable-text5').hide();  
+	  $('.timetable-item5').mouseenter(function(){
+		$('#timetable-text5').show(500);
+	  });
+	  $('.timetable-item5').mouseleave(function(){
+		$('#timetable-text5').hide(100);
+	  });
+  });
+  $( document ).ready(function(){
+	$('#timetable-text6').hide();  
+	  $('.timetable-item6').mouseenter(function(){
+		$('#timetable-text6').show(500);
+	  });
+	  $('.timetable-item6').mouseleave(function(){
+		$('#timetable-text6').hide(100);
+	  });
+  });
+  $( document ).ready(function(){
+	$('#timetable-text4').hide();  
+	  $('.timetable-item4').mouseenter(function(){
+		$('#timetable-text4').show(500);
+	  });
+	  $('.timetable-item4').mouseleave(function(){
+		$('#timetable-text4').hide(100);
+	  });
+  });
+  $( document ).ready(function(){
+	$('#timetable-text3').hide();  
+	  $('.timetable-item3').mouseenter(function(){
+		$('#timetable-text3').show(500);
+	  });
+	  $('.timetable-item3').mouseleave(function(){
+		$('#timetable-text3').hide(100);
+	  });
+  });
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
         
