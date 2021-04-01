@@ -441,15 +441,15 @@ transition: 0.5s ease;
 
 .timetable {
   display: grid;
-  grid-template-columns: 19% 61% 20%;
+  grid-template-columns: 18% 64% 20%;
   padding-bottom: 160px;
 }
 
 .timetable-container {
   display: grid;
-  grid-template: repeat(8, 1fr)/repeat(3, 1fr);
+  grid-template: repeat(1, 1fr)/repeat(3, 1fr);
   grid-gap: 20px;
-  max-height: 946px; 
+  
 }
 
 .timetable-titles {
@@ -472,16 +472,19 @@ transition: 0.5s ease;
   border: 1px solid #E5E5E5;
   grid-column: 1/2;
   grid-row: 2/3;
+  height: 250px;
 }
 .timetable-item4 {
   border: 1px solid #E5E5E5;
   grid-column: 2/3;
   grid-row: 2/5;
+  height: 402px;
 }
 .timetable-item5 {
   border: 1px solid #E5E5E5;
   grid-column: 3/4;
   grid-row: 2/4;
+  height: 309px;
 }
 .timetable-item6 {
   border: 1px solid #E5E5E5;
@@ -490,20 +493,24 @@ transition: 0.5s ease;
   background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
   opacity: 0.7;
   box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+  height: 433px;
 }
 .timetable-item7 {
   border: 1px solid #E5E5E5;
   grid-column: 2/3;
   grid-row: 5/9;
+  height: 281px;
 }
 .timetable-item8 {
   border: 1px solid #E5E5E5;
   grid-column: 3/4;
   grid-row: 4/9;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 374px;
 }
+.timetable-blok {
+    margin-left: 30px;
+	margin-bottom: 20px;
+  }
 .timetable-item3,
 .timetable-item4,
 .timetable-item5,
@@ -513,6 +520,7 @@ transition: 0.5s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 100%;
 }
 #timetable-text3,
 #timetable-text4,
@@ -520,8 +528,8 @@ transition: 0.5s ease;
 #timetable-text6,
 #timetable-text7,
 #timetable-text8 {
-  padding-left: 30px;
-  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom:40px;
   font-size: 18px;
   line-height: 150%;
 }
@@ -535,29 +543,26 @@ transition: 0.5s ease;
 }
 
 .timetable-item3  img {
-  margin-left: 31px;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 .timetable-item4 img {
-  margin-left: 31px;
   margin-bottom: 40px;
 }
 .timetable-item5 img {
-  margin-left: 31px;
-  margin-bottom: 46px;
+  margin-bottom: 40px;
+}
+.timetable-item5 .body-title {
+  margin-left: 8px;
 }
 .timetable-item6 img {
   margin-top: 95px;
-  margin-left: 31px;
   margin-bottom: 40px;
 }
 .timetable-item7 img {
-  margin-left: 31px;
-  margin-bottom: 40px;;
+  margin-bottom: 40px;
 }
 .timetable-item8 img{
-   
-   margin-left: 30px;
+   margin-left: 1px;
    margin-bottom: 40px;
 }
 
@@ -580,8 +585,9 @@ transition: 0.5s ease;
 
 .date {
   padding-top: 20px;
-  padding-left: 205px;
-  padding-bottom: 20px;
+  padding-right: 30px;
+  /*padding-bottom: 20px;*/
+  align-self: flex-end;
   font-weight: 400;
   font-size: 18px;
   line-height: 125%;
@@ -589,13 +595,8 @@ transition: 0.5s ease;
   opacity: 0.7;
 }
 
-.timetable-item3 .body-data {
-  padding-top: 38px;
-}
-
 .body-title {
-  padding-bottom: 20px;
-  padding-left: 30px;
+  padding-left: 1px;
   font-weight: bold;
   font-size: 18px;
   line-height: 125%;
@@ -938,6 +939,7 @@ form input {
     padding-top: 40px;
     padding-bottom: 80px;
     height: 100%;
+    display: block;
   }
   .footer {
     height: 222px;
@@ -1172,10 +1174,9 @@ form input {
     display: block;
     padding-bottom: 80px;
     padding-top: 0;
-    height: 100%;
   }
   .timetable-container {
-    grid-template: repeat(8, 1fr)/repeat(2, 1fr);
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
     max-height: none;
   } 
   .timetable-titles {
@@ -1195,8 +1196,6 @@ form input {
     margin-bottom: 32px;
   }
   .timetable-blok {
-    padding-bottom: 20px;
-    padding-left: 20px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -1205,20 +1204,13 @@ form input {
     padding-left: 0;
   }
   .body-title {
-    flex: 0 0 60%;
-    
+    flex: 0 0 85%;
     padding-bottom: 0;
-    padding-left: 30px;
+    padding-left: 14px;
     font-size: 16px;
     line-height: 120%;
   }
-  .body-data {
-    padding: 0;
-    padding: 20px 20px;
-    display: flex;
-    justify-content: flex-end;
-  }
-
+ 
   .timetable-item3 {
     width: 100%;
     grid-column: 1/3;
@@ -1245,6 +1237,14 @@ form input {
     grid-column: 1/3;
     grid-row: 8/9;
   }
+  .timetable-item3,
+  .timetable-item4,
+  .timetable-item5,
+  .timetable-item6,
+  .timetable-item7,
+  .timetable-item8 {
+    height: 180px;
+  }
   #timetable-text3,
   #timetable-text4,
   #timetable-text5,
@@ -1254,7 +1254,14 @@ form input {
     font-size: 12px;
     line-height: 150%;
     color: #2B3541;
-    padding-right: 30px;
+    padding-left: 77px;
+    padding-top: 0;
+  }
+  .timetable-item4 #timetable-text4 {
+    padding-left: 56px;
+  }
+  .timetable-item5 #timetable-text5 {
+    padding-left: 110px;
   }
 
   .timetable-item3  img {
@@ -1507,15 +1514,15 @@ form input {
   }
     .hero-image-girl {
     width: 100%;
-    height: 556px;
+    height: 647px;
     position: relative;
     overflow: hidden; 
   }
   .girl {
     width: 100%;
-    height: 556px;
+    height: 647px;
     position: absolute;
-    left: -50%;
+    left: -62%;
     top: -50%;
     transform: translate(50%,50%);
     object-fit: contain;
@@ -1567,82 +1574,98 @@ form input {
   }
   
   .timetable-container {
-    grid-template: repeat(8, 115px)/repeat(2, 1fr);
     grid-gap: 10px;
-    max-height: none;
   }
+ .timetable-container .timetable-item6 {
+   height: 206px;
+ }
   .timetable-title {
     padding-bottom: 7px;
-}
+  }
   .timetable-item2 {
     padding-top: 0;
     padding-bottom: 42px;
   }
   .timetable-item {
-    display: flex;
-    /* flex-direction: row-reverse; */
-    justify-content: space-between;
     box-shadow: none !important;
     border: 1px solid #E5E5E5 !important;
+    height: 114px;
   }
-  .timetable-item6  {
-    display: block;
+  .body-title {
+    flex: 0 0 81%;
   }
   .body-data {
     padding: 0;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-right: 20px;
   }
   .body-text {
     margin-top: 10px;
   }
-  .timetable-item3 .body-data {
-    padding-top: 20px;
-  }
   .timetable-blok {
     padding-bottom: 0;
-    padding-left: 20px;
+    margin-left: 0; 
     display: flex;
     align-items: center;
     flex-wrap: wrap;
   }
-  #timetable-text3,
-  #timetable-text4,
-  #timetable-text5,
-  #timetable-text7,
+   #timetable-text3 {
+    padding-left: 77px;
+  }
+  #timetable-text6 {
+    padding-left: 77px;
+  }
+  .timetable-item4 #timetable-text4 {
+    padding-left: 77px;
+  }
+  .timetable-item5 #timetable-text5 {
+    padding-left: 77px;
+  }
+  #timetable-text7 {
+    padding-left: 77px;
+  }
   #timetable-text8 {
-    padding-left: 3px;
-    margin-bottom: 4px;
+    
   }
   .timetable-item3  img {
     width: 39px;
     height: 39px;
     margin: 0;
+    margin-left: 24px;
   }
   .timetable-item4 img {
     width: 39px;
     height: 39px;
     margin: 0;
+    margin-left: 32px;
    }
   .timetable-item5 img {
     width: 46px;
     height: 25px;
     margin: 0;
+    margin-left: 21px;
   }
   .timetable-item6 img {
     width: 34px;
     height: 53px;
     margin: 0;
+    margin-left: 27px;
   }
   .timetable-item7 img {
     width: 39px;
     height: 37px;
     margin: 0;
+    margin-left: 24px;
   }
   .timetable-item8 img{
     width: 35px;
     height: 40px;
     margin: 0;
+    margin-left: 26px;
   }
+  .timetable-item5 .body-title {
+    margin-left: 0;
+}
 
 }
 
